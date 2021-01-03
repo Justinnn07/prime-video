@@ -1,0 +1,30 @@
+.links > span {
+  color: #28a3f0;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+.flex > img {
+  width: 100px;
+  object-fit: contain;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: lightgray;
+  margin-top: -15px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b2530;
+  padding: 20px;
+  top: 0;
+  position: sticky;
+  z-index: 100;
+}
+
+.header-left > img {
+  width: 112px;
+  height: 40px;
+  object-fit: contain;
+  margin-left: 10px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left > span {
+  padding: 0px 15px;
+  margin-top: -15px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.header-left > span:hover {
+  color: rgba(242, 244, 246, 0.9);
+  transition: 0.4s;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  outline-width: 0;
+  display: flex;
+  align-items: center;
+  background-color: rgba(15, 23, 30, 0.2);
+  border: 1px solid rgba(129, 151, 164, 0.5);
+}
+
+.input > input {
+  outline-width: 0;
+  background-color: rgba(15, 23, 30, 0.2);
+  border: none;
+  padding: 10px;
+}
+
+.input > i {
+  color: lightgray;
+  margin-left: 10px;
+  font-size: larger;
+}
+
+.avt {
+  margin-left: 10px;
+}

@@ -16,25 +16,17 @@ function App() {
     db.collection("comedy").onSnapshot((snapshot) => {
       setComedy(snapshot.docs.map((doc) => doc.data()));
     });
-  });
-
-  useEffect(() => {
     db.collection("kids").onSnapshot((snapshot) => {
       setKids(snapshot.docs.map((doc) => doc.data()));
     });
-  });
-
-  useEffect(() => {
     db.collection("latest-movies").onSnapshot((snapshot) => {
       setLatest(snapshot.docs.map((doc) => doc.data()));
     });
-  });
-
-  useEffect(() => {
     db.collection("watched").onSnapshot((snapshot) => {
       setWatched(snapshot.docs.map((doc) => doc.data()));
     });
-  });
+  }, []);
+
   return (
     <div className="App">
       <Header />
